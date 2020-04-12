@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ParkingCounter_View", "ParkingCounter\ParkingCounter_View.csproj", "{B9DC162B-9E39-4001-9C9A-123676FB7FAE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ParkingCounter_Business_Layer", "ParkingCounter_Business_Layer\ParkingCounter_Business_Layer.csproj", "{D53FFBD9-8F14-46ED-9199-DACE7A09F097}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B9DC162B-9E39-4001-9C9A-123676FB7FAE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B9DC162B-9E39-4001-9C9A-123676FB7FAE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B9DC162B-9E39-4001-9C9A-123676FB7FAE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B9DC162B-9E39-4001-9C9A-123676FB7FAE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D53FFBD9-8F14-46ED-9199-DACE7A09F097}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D53FFBD9-8F14-46ED-9199-DACE7A09F097}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D53FFBD9-8F14-46ED-9199-DACE7A09F097}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D53FFBD9-8F14-46ED-9199-DACE7A09F097}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
