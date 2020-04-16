@@ -23,7 +23,7 @@ namespace ParkingCounter_Business_Layer
             List<string> typeList = new List<string>();
             foreach (Type t in bufList)
             {
-                typeList.Add(t.ToString());
+                typeList.Add(t.Name);
             }
             if (!typeList.Contains(args[0])) return false;
 
