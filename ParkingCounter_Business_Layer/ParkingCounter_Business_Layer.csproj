@@ -43,24 +43,22 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Car.cs" />
-    <Compile Include="CarFactory.cs" />
+    <Compile Include="Vehicles\Car.cs" />
+    <Compile Include="Factories\CarFactory.cs" />
     <Compile Include="Counter.cs" />
-    <Compile Include="MunicipalTransport.cs" />
-    <Compile Include="MunicipalTransportFactory.cs" />
+    <Compile Include="Vehicles\MunicipalTransport.cs" />
+    <Compile Include="Factories\MunicipalTransportFactory.cs" />
     <Compile Include="Parser.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="RegularCar.cs" />
-    <Compile Include="RegularCarFactory.cs" />
+    <Compile Include="Vehicles\RegularCar.cs" />
+    <Compile Include="Factories\RegularCarFactory.cs" />
     <Compile Include="RequestDTO.cs" />
-    <Compile Include="Truck.cs" />
-    <Compile Include="TruckFactory.cs" />
+    <Compile Include="Vehicles\Truck.cs" />
+    <Compile Include="Factories\TruckFactory.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-    <None Include="ClassDiagram1.cd" />
-    <None Include="ClassDiagram2.cd" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

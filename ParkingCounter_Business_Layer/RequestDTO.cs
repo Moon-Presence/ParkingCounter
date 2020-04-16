@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ParkingCounter_Business_Layer
 {
-    class RequestDTO
+    public class RequestDTO
     {
         public string type;
         public double hours;

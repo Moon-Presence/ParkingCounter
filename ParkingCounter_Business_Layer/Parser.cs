@@ -9,7 +9,7 @@ namespace ParkingCounter_Business_Layer
 {
     class Parser
     {
-        private RequestDTO DTO;
+        private RequestDTO DTO = new RequestDTO();
         public bool status= false;
 
         public Parser(string[] args) {
