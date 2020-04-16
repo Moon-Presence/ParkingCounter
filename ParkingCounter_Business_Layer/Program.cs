@@ -11,14 +11,25 @@ namespace ParkingCounter_Business_Layer
     {
         static void Main(string[] args)
         {
-            Parser p = new Parser(args);
-            if (p.status) 
+            DataParser p = new DataParser(args);
+            if (p.status)
                 Console.WriteLine(new Counter(p.Parse()).Count());
         }
-
         public static double Count(RequestDTO DTO)
         {
+            if (!DataParser.DataCheck(DTO)) return 0;
             return new Counter(DTO).Count();
+        }        
+        public static List<string> MakeListOfCars()
+        {
+            return TypeParser.carsTypeListCreator();
+        }
+        public class RequestDTO
+        {
+            public string type;
+            public double hours;
+            public double factor;
+            public double rentCost;
         }
     }
 }

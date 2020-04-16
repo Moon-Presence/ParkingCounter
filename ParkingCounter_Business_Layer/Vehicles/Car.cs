@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ParkingCounter_Business_Layer
 {
-    public abstract class Car
+    abstract class Car
     {
         protected double factor = 0;
         public abstract double Bill(double rentTax, double hours);

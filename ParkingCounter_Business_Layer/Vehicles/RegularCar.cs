@@ -9,7 +9,7 @@ namespace ParkingCounter_Business_Layer
     class RegularCar : Car
     {
 
-        public RegularCar() : base()
+        public RegularCar(double value) : base(value)
         {
         }
 

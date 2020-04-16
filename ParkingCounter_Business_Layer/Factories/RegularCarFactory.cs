@@ -8,12 +8,12 @@ namespace ParkingCounter_Business_Layer
 {
     class RegularCarFactory : CarFactory
     {
-        public RegularCarFactory() : base()
+        public RegularCarFactory(double value) : base(value)
         {
         }
         public override Car GetCar()
         {
-            return new RegularCar();
+            return new RegularCar(this.factor);
         }
     }
 }
