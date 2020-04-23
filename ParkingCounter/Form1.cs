@@ -32,7 +32,14 @@ namespace ParkingCounter
                 MessageBox.Show("Something goes wrong. Please, try again!", "!!Error!!", MessageBoxButtons.OK);
                 return;
             }
-            labelBill.Text= "Bill: "+ParkingCounter_Business_Layer.Program.Count(DTO);   
+            double bill=ParkingCounter_Business_Layer.Program.Count(DTO);
+            if(bill>0)
+            labelBill.Text = "Bill: " + bill;
+            else
+            {
+                MessageBox.Show("Invalid value. Please, try again!", "!!Error!!", MessageBoxButtons.OK);
+                labelBill.Text = "Bill: " + bill;
+            }
         }
     }
 }

@@ -32,7 +32,7 @@ namespace ParkingCounter_Business_Layer
             return DataCheck(DTO);
         }
         public static bool DataCheck(Program.RequestDTO DTO) {
-            if (DTO.hours <= 0 || DTO.factor <= 0 || DTO.rentCost <= 0) return false;
+            if (DTO.hours <= 0 || DTO.factor < 0 || DTO.rentCost <= 0) return false;
             return true;
         }
         public Program.RequestDTO Parse() {
