@@ -9,6 +9,16 @@ namespace ParkingCounter_Business_Layer
 {
     class TypeParser
     {
+        public static CarFactory GetFactory(string type, double factor)
+        {
+            Type factoryType;
+            SortedDictionary<string, Type> map = TypeParser.CarFactoryMap();
+            map.TryGetValue(type, out factoryType);
+            ConstructorInfo factoryConstructor = factoryType.GetConstructor(BindingFlags.Instance | BindingFlags.Public, null, new[] { typeof(double) }, null);
+            object[] parameters = new object[1];
+            parameters[0] = factor;
+            return (CarFactory)factoryConstructor.Invoke(parameters);
+        }
         public static List<string> carsTypeListCreator()
         {
             IEnumerable<Type> bufList = Assembly.GetAssembly(typeof(Car)).GetTypes().Where(type => type.IsSubclassOf(typeof(Car)));
